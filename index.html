@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="head_logo">
+            <h1>TRAVEL BLOG</h1>
+            <p>A LIFE OF TRAVEL</p>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <p>About</p>
+                </li>
+                <li>
+                    <p>Blog +</p>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="">Latest Posts</a></li>
+                            <li><a href="">Browse By Category</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p>Travel Resources +
+                    <p>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="">All Resource</a></li>
+                            <li><a href="">How To Live A Travel Life</a></li>
+                            <li><a href="">Work On Board Cruise Ships</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p>Tours</p>
+                </li>
+                <li>
+                    <p>Contact</p>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="s_media">
+                <a href="https://www.facebook.com">
+                    <img src="https://i.ibb.co/phD05Bv/Facebook-Logo.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://i.ibb.co/dp7XC9m/Instagram-logo-2016-svg.webp" alt="">
+                </a>
+                <a href="">
+                    <img src="https://i.ibb.co/mBTbyyN/twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://i.ibb.co/3fkq2vZ/tube.png" alt="">
+                </a>
+                <button id="srch">
+                    <i class="fa-solid fa-magnifying-glass" id="toggledark"></i>
+                </button>
+
+            </div>
+
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+
+            <div class="more">
+                <button id="location">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p id="add1"></p>
+                    <p id="p"></p>
+                </button>
+            </div>
+
+            <div class="weath">
+                <i class="bi bi-cloud-sun-fill" id="btn123"></i>
+                <p id="addme"></p>
+                <p id="addp"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="weather">
+        <i class="bi bi-cloud-sun-fill" id="btn123"></i>
+        <p id="addme"></p>
+        <p id="addp"></p>
+        <!-- <button id="btn">click</button> -->
+    </div>
+
+    <div class="main_page">
+        <div class="wellcome">
+            <div class="well">
+                <p class="p1">WELCOME! <br>I'M JATO</p>
+                <p class="p1 p2"> <b>Travel is my life.</b> I've been travelling <br>
+                    around the world nonstop. If you <br> also love travel, you're in the right place</p>
+                <p class="p1 p2">let's get started...</p>
+                <div class="buttonn">
+                    <button class="btn b1">BROWSE THE BLOG</button>
+                    <button class="btn b2">TRAVEL RESOURCES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="visit">
+        <div class="visit1">
+            <h1>128</h1>
+            <p>Countries visited</p>
+        </div>
+        <div class="visit1">
+            <h1>JAPAN</h1>
+            <p>Where Am I?</p>
+        </div>
+        <div class="visit1">
+            <h1>7917</h1>
+            <p>Dyas On The Road</p>
+        </div>
+    </div>
+
+
+    <div class="subscribe">
+        <div class="subs_main">
+            <h1>Join 22,000+ people and get your weekly <br> travel inspiration</h1>
+            <p>New blog posts, honest updates from my 21 years of constant travel, personal <br> recommendations and the
+                best of travel from around the world</p>
+            <div class="sub_subscribe">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="check">
+        <p class="check_p">CHECK IT OUT
+        <p>
+        <div class="check_menu">
+            <div class="menu">
+                <img src="https://i.ibb.co/mRjmw4Q/alone-astronomy-blue-british-columbia.jpg" alt="">
+                <div class="desc">
+                    <h3>Travel Resources</h3>
+                    <p>Planning, working abroad and more</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.ibb.co/dc0GmSK/blog-post.jpg" alt="">
+                <div class="desc">
+                    <h3>Blog Posts</h3>
+                    <p>all things travel, by category</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.ibb.co/KxBzG75/newslettter.jpg" alt="">
+                <div class="desc">
+                    <h3>The Newslatter</h3>
+                    <p>Join over 21,000+ other travellers</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.ibb.co/3mZJdpW/cruise-ship.jpg" alt="">
+                <div class="desc">
+                    <h3>Works on a cruise ship</h3>
+                    <p>My guide on how tp work on a cruise ship</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.ibb.co/vHyNB8S/main-photo.jpg" alt="">
+                <div class="desc">
+                    <h3>Travel Advice</h3>
+                    <p>20 years of travel experiance all over the world</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.ibb.co/zhmjBFk/travel-tours.jpg" alt="">
+                <div class="desc">
+                    <h3>Wandering Tours</h3>
+                    <p>Unique, <small> groups trips to great destinations</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reads">
+        <h1>POPULAR READS</h1>
+        <div class="most">
+            <div class="view">
+                <h2>Most Viewed</h2>
+                <div class="most_paragraph">
+                    <a href="">
+                        <p>42-ways-you-can-make-money-and-travel-the-world</p>
+                    </a>
+                    <a href="">
+                        <p>please-help-me-find-a-home</p>
+                    </a>
+                    <a href="">
+                        <p>please-dont-be-afraid-to-travel-on-your-own</p>
+                    </a>
+                    <a href="">
+                        <p>how-i-can-afford-my-life-of-constant-travel</p>
+                    </a>
+                    <a href="">
+                        <p>lets-get-to-know-each-other-better</p>
+                    </a>
+                    <a href="">
+                        <p>the-day-us-customs-found-a-bullet-in-my-pocket</p>
+                    </a>
+                    <a href="">
+                        <p>the-day-us-customs-found-a-bullet-in-my-pocket</p>
+                    </a>
+                    <a href="">
+                        <p>living-abroad-for-less-than-1000-per-month</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="para">
+                <h2>Most Recent</h2>
+                <div class="most_paragraph">
+                    <a href="">
+                        <p>perfect-5-day-portugal-road-trip</p>
+                    </a>
+                    <a href="">
+                        <p>best-places-to-photograph-tigers-in-the-wild-in-india</p>
+                    </a>
+                    <a href="">
+                        <p>how-to-travel-to-germany-on-a-budget</p>
+                    </a>
+                    <a href="">
+                        <p>nightlife-ideas-when-in-prague</p>
+                    </a>
+                    <a href="">
+                        <p>esim-for-europe-the-best-way-to-stay-connected</p>
+                    </a>
+                    <a href="">
+                        <p>walking-holidays-across-spain</p>
+                    </a>
+                    <a href="">
+                        <p>your-guide-to-a-family-gap-year-traveling-abroad</p>
+                    </a>
+                    <a href="">
+                        <p>save-money-on-hotels-this-black-friday</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <h1>Hightlighted post</h1>
+            <p>affordable-canadian-cities-for-digital-nomads</p>
+            <p>top-alternative-destinations-to-visit-across-europe</p>
+        </div>
+    </div>
+
+    <div class="seen">
+        <p>AS SEEN IN</p>
+        <img src="https://i.ibb.co/JFWKRz1/Wandering-Earl-Media.png" alt="">
+    </div>
+
+    <footer>
+        <p class="footer_p">&copy; Copyright 2022 Travel Blog</p>
+        <p class="footer_p">Privacy Policy</p>
+        <p class="footer_p">*As an Amazon Associate I earn from qualifying purchases. Certain other links on this site
+            might earn me a
+            commission if a product/service is purchased.</p>
+    </footer>
+
+    <script>
+        window.onload = wind()
+        window.onload = wind1()
+    </script>
+</body>
+
+</html>

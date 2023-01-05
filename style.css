@@ -1,0 +1,693 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* header------ */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.head_logo {
+  text-align: right;
+}
+
+.head_logo h1 {
+  font-size: 45px;
+  font-weight: bolder;
+  color: #007fce;
+}
+
+.head_logo {
+  color: #007fce;
+  font-weight: bolder;
+}
+
+.nav {
+  margin: 0px 26px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 8px;
+  list-style: none;
+  position: relative;
+  margin: 10px;
+}
+
+.nav ul li > p{
+  font-size: 17px;
+  font-weight: bold;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav ul li p:hover {
+  text-decoration: underline;
+  color: #074870;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+  color: #074870;
+}
+
+.dropdown {
+  display: none;
+}
+
+.nav ul li:hover .dropdown {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 100%;
+  background-color: rgb(234, 234, 234);
+  z-index: 100;
+}
+
+.dropdown ul {
+  display: block;
+  border-top: 2px solid black;
+}
+
+.dropdown ul li {
+  width: 150px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  margin: 0;
+  padding: 15px 20px;
+}
+.dropdown ul li a {
+  font-weight: 200;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a {
+  text-decoration: none;
+  margin: 0px 3px;
+}
+
+.social button {
+  margin-top: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.social button  i{
+  font-size: 25px;
+}
+
+.social img {
+  width: 20px;
+}
+
+#toggledark{
+  font-size: 16px;
+}
+
+#toggleDark{
+  cursor: pointer;
+}
+
+i{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 50px;
+}
+#location{
+  text-align: center;
+  margin-left: 20px;
+}
+
+#location i {
+  font-size: 20px;
+}
+
+#location > p{
+  margin-left: 40px;
+}
+
+
+
+/* weather */
+.weath{
+  margin-left: 10px;
+}
+.weath p{
+  margin-left: 20px;
+}
+
+
+/* mainpage---------- */
+.main_page {
+  background-image: url("https://www.wanderingearl.com/wp-content/uploads/2018/08/Wandering-Earl-Sahara-Desert.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 530px;
+}
+
+.wellcome {
+  background-color: rgba(0, 0, 0, 0.656);
+  width: 600px;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+
+.well {
+  margin: 20px 26px;
+}
+
+.p1 {
+  color: white;
+}
+
+.p1:first-child {
+  font-weight: bolder;
+  font-size: 65px;
+  color: rgb(197, 197, 0);
+  margin-bottom: 15px;
+}
+
+.p1:nth-child(3) {
+  margin: 10px 0px;
+}
+
+.p2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.buttonn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.btn {
+  background-color: rgb(204, 204, 2);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* visit-------- */
+.visit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 35px 0px;
+  text-align: center;
+}
+
+.visit1 h1 {
+  font-weight: 200;
+}
+.visit1 p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* subscribe */
+.subscribe {
+  background-image: url("https://i.ibb.co/T8gCxhX/map.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subs_main {
+  padding: 30px 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.subscribe h1 {
+  color: rgb(0, 0, 75);
+  font-size: 45px;
+  margin-bottom: 28px;
+}
+.subscribe p {
+  font-size: 23px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.sub_subscribe {
+  margin: 40px 0px;
+  width: 56%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub_subscribe input {
+  width: 0;
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 15px 25px;
+  border: 3px solid rgb(64, 64, 64);
+}
+
+.sub_subscribe input::placeholder {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.sub_subscribe button {
+  padding: 15px 25px;
+  border: 3px solid rgb(64, 64, 64);
+  background-color: yellow;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+/* check------------ */
+.check {
+  width: 73%;
+  margin: auto;
+  padding: 70px 0px;
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.check_p {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 60px;
+}
+
+.check_menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s;
+}
+
+.desc {
+  text-align: center;
+  color: white;
+  background: rgb(3, 16, 39);
+  padding: 30px 0px;
+}
+
+.menu img {
+  height: 250px;
+  width: 100%;
+}
+
+.menu:hover{
+  cursor: pointer;
+  transform: rotate(2deg);
+}
+
+/* read----- */
+.reads {
+  width: 73%;
+  margin: 10px auto;
+  border-top: 1px solid rgb(205, 205, 205);
+  border-bottom: 1px solid rgb(205, 205, 205);
+  padding: 60px 0px;
+}
+
+.reads h1 {
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+
+.most {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.most h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.most_paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.most > * p {
+  line-height: 2;
+  font-size: 23px;
+  color: rgb(104, 104, 104);
+  text-transform: capitalize;
+}
+
+.most a {
+  text-decoration: none;
+}
+
+.most p:hover {
+  color: orange;
+}
+
+.view {
+  margin-right: 30px;
+}
+
+/* post---- */
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.post > p {
+  text-transform: capitalize;
+  line-height: 2;
+  font-size: 23px;
+  color: rgb(104, 104, 104);
+}
+
+.post p:hover {
+  color: rgb(255, 94, 0);
+}
+
+/* seen------- */
+.seen {
+  width: 73%;
+  margin: auto;
+  margin-top: 10px;
+  border-top: 1px solid rgb(205, 205, 205);
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.seen p {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* footer---------- */
+footer {
+  text-align: center;
+  background: #021b2b;
+  padding: 40px 0px;
+}
+
+footer > p {
+  line-height: 1.5;
+  color: gray;
+}
+
+.footer_p:first-child {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer_p:nth-child(2) {
+  font-size: 20px;
+  color: rgb(208, 208, 208);
+  cursor: pointer;
+}
+
+/* media-queries------- */
+@media (max-width: 1300px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social button i{
+    font-size: 20px;
+  }
+
+  .head_logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .wellcome {
+    position: absolute;
+    margin: 50px auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    text-align: center;
+  }
+
+  .p1:first-child {
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .p2 {
+    font-size: 18px;
+  }
+
+  
+  .social button i{
+    font-size: 20px;
+  }
+
+  .buttonn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  .btn {
+    width: 80%;
+  }
+
+  .sub_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sub_subscribe input {
+    width: 100%;
+  }
+
+  .visit {
+    display: block;
+  }
+  .visit1 {
+    margin-bottom: 30px;
+  }
+
+  .most {
+    display: block;
+  }
+
+  .para {
+    margin-top: 50px;
+  }
+
+  .seen img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .header{
+    padding-bottom: 100px;
+  }
+  .head_logo h1 {
+    font-size: 22px;
+  }
+
+  .head_logo p{
+    font-size: 10px;
+  }
+  .nav ul li {
+    margin: 2px;
+  }
+  .nav ul li a {
+    font-size: 15px;
+  }
+
+  .nav ul li > p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .social{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social a{
+    margin: 0px 1px;
+  }
+
+  .social button i{
+    font-size: 20px;
+  }
+
+  .social img{
+    width: 20px;
+  }
+
+  i{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  #location i{
+    font-size: 15px;
+  }
+
+  #srch i{
+    font-size: 15px;
+  }
+
+  #toggleDark{
+    position: absolute;
+    top: 24%;
+    left: 0;
+  }
+
+  .weath{
+    position: absolute;
+    top: 24%;
+  }
+
+  #location{
+    position: absolute;
+    top: 24%;
+    right: 0;
+  }
+
+  .most > * p {
+    font-size: 15px;
+  }
+
+  .post > p {
+    font-size: 15px;
+  }
+
+  .subscribe h1 {
+    color: rgb(0, 0, 75);
+    font-size: 30px;
+    margin: 0px 5px;
+    margin-bottom: 10px;
+  }
+  .subscribe p {
+    margin: 5px;
+    font-size: 16px;
+  }
+  footer > p {
+    line-height: 1.5;
+    color: gray;
+  }
+
+  .footer_p:first-child {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .footer_p:nth-child(2) {
+    font-size: 10px;
+    color: rgb(208, 208, 208);
+    cursor: pointer;
+  }
+  .footer_p:last-child {
+    font-size: 8px;
+    margin: 0px 15px;
+  }
+}
+
+@media (max-width: 450px){
+
+  .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social a{
+    margin: 5px;
+  }
+
+  .social button{
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .social button i{
+    font-size: 20px;
+  }
+  .head_logo h1 {
+    font-size: 22px;
+  }
+
+  .head_logo p{
+    font-size: 8px;
+  }
+
+  .nav ul li a {
+    font-size: 9px;
+  }
+
+  .nav ul li > p{
+    font-size: 9px;
+    font-weight: bold;
+  }
+
+  .social img{
+    width: 20px;
+  }
+}
+
